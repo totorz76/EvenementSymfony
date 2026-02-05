@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+{{form_start(formevent)}}
+{{form_row(formevent.titre)}}
+{{form_row(formevent.description)}}
+{{form_row(formevent.dateDebut)}}
+{{form_row(formevent.dateFin)}}
+<button>Modifier</button>
+{{form_end(formevent)}}
+
+{% endblock %}

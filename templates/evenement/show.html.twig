@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+<h1>Information sur l'evenement</h1>
+   <p>{{ evenement.titre }}</p>
+   <p>{{ evenement.description }}</p>
+   <p>{{ evenement.dateDebut | date('m/d/Y', "Europe/Paris") }}</p>
+   <p>{{ evenement.dateFin | date('m/d/Y', "Europe/Paris") }}</p>
+   <p>{{ evenement.lieu }}</p>
+{% endblock %}
